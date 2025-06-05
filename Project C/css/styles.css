@@ -30,3 +30,29 @@ section {
     border-radius: 6px;
     box-shadow: 0 2px 4px #0000001a
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+thead {
+    background-color: #eeeeee;
+}
+
+tfoot {
+    background-color: #ffffff
+}
