@@ -56,3 +56,65 @@ thead {
 tfoot {
     background-color: #ffffff
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="color"],
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+fieldset.form-group {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+fieldset.form-group legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: #005353;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #004444;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .top-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
